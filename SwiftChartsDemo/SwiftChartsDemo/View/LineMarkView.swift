@@ -33,53 +33,14 @@ struct LineMarkView: View {
             .padding()
             
             Menu {
-                Button {
-                    symbol = .square
-                } label: {
-                    Label("Square", systemImage: "square")
-                }
-                
-                Button {
-                    symbol = .circle
-                } label: {
-                    Label("Circle", systemImage: "circle")
-                }
-                
-                Button {
-                    symbol = .triangle
-                } label: {
-                    Label("Triangle", systemImage: "triangle")
-                }
-                
-                Button {
-                    symbol = .diamond
-                } label: {
-                    Label("Diamond", systemImage: "diamond")
-                }
-
-                Button {
-                    symbol = .pentagon
-                } label: {
-                    Label("Pentagon", systemImage: "pentagon")
-                }
-                
-                Button {
-                    symbol = .plus
-                } label: {
-                    Label("Plus", systemImage: "plus")
-                }
-                
-                Button {
-                    symbol = .cross
-                } label: {
-                    Label("Cross", systemImage: "cross")
-                }
-                
-                Button {
-                    symbol = .asterisk
-                } label: {
-                    Label("Asterisk", systemImage: "asterisk")
-                }
+                MenuButton(symbol: $symbol, symbolName: "Square", symbolImageName: "square")
+                MenuButton(symbol: $symbol, symbolName: "Circle", symbolImageName: "circle")
+                MenuButton(symbol: $symbol, symbolName: "Triangle", symbolImageName: "triangle")
+                MenuButton(symbol: $symbol, symbolName: "Diamond", symbolImageName: "diamond")
+                MenuButton(symbol: $symbol, symbolName: "Pentagon", symbolImageName: "pentagon")
+                MenuButton(symbol: $symbol, symbolName: "Plus", symbolImageName: "plus")
+                MenuButton(symbol: $symbol, symbolName: "Cross", symbolImageName: "cross")
+                MenuButton(symbol: $symbol, symbolName: "Asterisk", symbolImageName: "asterisk")
             } label: {
                 Text("Choose Symbol")
             }
@@ -91,5 +52,34 @@ struct LineMarkView: View {
 struct LineMarkView_Previews: PreviewProvider {
     static var previews: some View {
         LineMarkView()
+    }
+}
+
+struct MenuButton: View {
+   
+    @Binding var symbol: BasicChartSymbolShape
+    
+    var symbolName: String
+    
+    var symbolImageName: String
+    
+    var body: some View {
+        Button {
+            symbol = {
+                switch symbolImageName {
+                case "square": return .square
+                case "circle": return .circle
+                case "triangle": return .triangle
+                case "diamond": return .diamond
+                case "pentagon": return .pentagon
+                case "plus": return .plus
+                case "cross": return .cross
+                case "asterisk": return .asterisk
+                default: return .square
+                }
+            }()
+        } label: {
+            Label(symbolName, systemImage: symbolImageName)
+        }
     }
 }
