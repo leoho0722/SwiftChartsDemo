@@ -33,14 +33,14 @@ struct LineMarkView: View {
             .padding()
             
             Menu {
-                MenuButton(symbol: $symbol, symbolName: "Square", symbolImageName: "square")
-                MenuButton(symbol: $symbol, symbolName: "Circle", symbolImageName: "circle")
-                MenuButton(symbol: $symbol, symbolName: "Triangle", symbolImageName: "triangle")
-                MenuButton(symbol: $symbol, symbolName: "Diamond", symbolImageName: "diamond")
-                MenuButton(symbol: $symbol, symbolName: "Pentagon", symbolImageName: "pentagon")
-                MenuButton(symbol: $symbol, symbolName: "Plus", symbolImageName: "plus")
-                MenuButton(symbol: $symbol, symbolName: "Cross", symbolImageName: "cross")
-                MenuButton(symbol: $symbol, symbolName: "Asterisk", symbolImageName: "asterisk")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Square", symbolImageName: "square")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Circle", symbolImageName: "circle")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Triangle", symbolImageName: "triangle")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Diamond", symbolImageName: "diamond")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Pentagon", symbolImageName: "pentagon")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Plus", symbolImageName: "plus")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Cross", symbolImageName: "cross")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Asterisk", symbolImageName: "asterisk")
             } label: {
                 Text("Choose Symbol")
             }
@@ -55,7 +55,7 @@ struct LineMarkView_Previews: PreviewProvider {
     }
 }
 
-struct MenuButton: View {
+struct MenuSymbolButton: View {
    
     @Binding var symbol: BasicChartSymbolShape
     
