@@ -10,21 +10,18 @@ import Charts
 
 struct RectangleMarkView: View {
     
-    @State private var vm = ToyShapeViewModel()
+    @State private var vm = MatrixEntryViewModel()
     
     var body: some View {
         Chart {
-            ForEach(vm.data) { shape in
+            ForEach(vm.data) { data in
                 RectangleMark(
-                    x: .value("Shape Type", shape.type),
-                    y: .value("Type Count", shape.count)
+                    x: .value("Positive", data.positive),
+                    y: .value("Negative", data.negative)
                 )
-                .foregroundStyle(by: .value("Shape Color", shape.color))
+                .foregroundStyle(by: .value("Number", data.num))
             }
         }
-        .chartForegroundStyleScale([
-            "Green" : .green, "Purple" : .purple, "Pink" : .pink, "Yellow" : .yellow
-        ])
         .frame(height: 300)
         .padding()
     }

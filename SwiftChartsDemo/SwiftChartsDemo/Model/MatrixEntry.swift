@@ -1,5 +1,5 @@
 //
-//  ToyShape.swift
+//  MatrixEntry.swift
 //  SwiftChartsDemo
 //
 //  Created by Leo Ho on 2022/9/9.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ToyShape: Identifiable {
+struct MatrixEntry: Identifiable {
     
     var id = UUID().uuidString
     
-    var type: String
+    var positive: String
     
-    var count: Double
+    var negative: String
     
-    var color: String
+    var num: Double
 }

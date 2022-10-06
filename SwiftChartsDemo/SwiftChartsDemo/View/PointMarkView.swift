@@ -10,23 +10,41 @@ import Charts
 
 struct PointMarkView: View {
     
-    @State private var vm = ToyShapeViewModel()
+    @State private var symbol: BasicChartSymbolShape = .square
+    
+    @State private var vm = StockPriceViewModel()
     
     var body: some View {
-        Chart {
-            ForEach(vm.data) { shape in
-                PointMark(
-                    x: .value("Shape Type", shape.type),
-                    y: .value("Type Count", shape.count)
-                )
-                .foregroundStyle(by: .value("Shape Color", shape.color))
+        VStack {
+            Chart {
+                ForEach(vm.stockData) { stock in
+                    PointMark(
+                        x: .value("Date", stock.date),
+                        y: .value("End Price", stock.endPrice)
+                    )
+                    .foregroundStyle(by: .value("Stock Name", stock.name))
+                    .symbol(symbol)
+                    .symbolSize(100)
+                }
+            }
+            .chartXAxisLabel("Date (2022/8/19~2022/9/30)", alignment: .leading)
+            .chartYAxisLabel("Price (NTD)", alignment: .trailing)
+            .frame(height: 300)
+            .padding()
+            
+            Menu {
+                MenuSymbolButton(symbol: $symbol, symbolName: "Square", symbolImageName: "square")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Circle", symbolImageName: "circle")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Triangle", symbolImageName: "triangle")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Diamond", symbolImageName: "diamond")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Pentagon", symbolImageName: "pentagon")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Plus", symbolImageName: "plus")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Cross", symbolImageName: "cross")
+                MenuSymbolButton(symbol: $symbol, symbolName: "Asterisk", symbolImageName: "asterisk")
+            } label: {
+                Text("Choose Symbol")
             }
         }
-        .chartForegroundStyleScale([
-            "Green" : .green, "Purple" : .purple, "Pink" : .pink, "Yellow" : .yellow
-        ])
-        .frame(height: 300)
-        .padding()
     }
 }
 
