@@ -10,17 +10,17 @@ import Charts
 
 struct AreaMarkView: View {
     
-    @State private var vm = StockPriceViewModel()
+    @State private var vm = StockEntityViewModel()
     
     var body: some View {
         Chart {
-            ForEach(vm.stockData) { data in
+            ForEach(vm.stockData) { stock in
                 AreaMark(
-                    x: .value("Date", data.date),
-                    y: .value("End Price", data.endPrice),
+                    x: .value("Date", stock.date),
+                    y: .value("End Price", stock.endPrice),
                     stacking: .unstacked
                 )
-                .foregroundStyle(by: .value("Stock Name", data.name))
+                .foregroundStyle(by: .value("Stock Name", stock.name))
             }
         }
         .chartXAxisLabel("Date (2022/8/19~2022/9/8)", alignment: .leading)

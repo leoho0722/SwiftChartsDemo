@@ -14,12 +14,12 @@ struct RectangleMarkView: View {
     
     var body: some View {
         Chart {
-            ForEach(vm.data) { data in
+            ForEach(vm.matrixData) { matrix in
                 RectangleMark(
-                    x: .value("Positive", data.positive),
-                    y: .value("Negative", data.negative)
+                    x: .value("Positive", matrix.positive),
+                    y: .value("Negative", matrix.negative)
                 )
-                .foregroundStyle(by: .value("Number", data.num))
+                .foregroundStyle(by: .value("Number", matrix.num))
             }
         }
         .frame(height: 300)

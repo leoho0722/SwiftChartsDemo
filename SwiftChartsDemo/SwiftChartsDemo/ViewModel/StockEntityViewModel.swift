@@ -1,15 +1,15 @@
 //
-//  TSMCStockPriceViewModel.swift
+//  StockEntityViewModel.swift
 //  SwiftChartsDemo
 //
 //  Created by Leo Ho on 2022/9/10.
 //
 
-import Foundation
+import SwiftUI
 
-class StockPriceViewModel {
+class StockEntityViewModel {
 
-    var stockData: [StockPrice] = [
+    var stockData: [StockEntity] = [
         
         // MARK: TSMC Stock Price
         .init(name: "TSMC", highestPrice: 523.00, lowestPrice: 517.00, endPrice: 519.00, month: 8, day: 19),

@@ -9,10 +9,10 @@ import SwiftUI
 
 class MatrixEntryViewModel {
     
-    var data: [MatrixEntry] = [
-        .init(positive: "+", negative: "+", num: 125),
-        .init(positive: "+", negative: "-", num: 10),
-        .init(positive: "-", negative: "-", num: 80),
-        .init(positive: "-", negative: "+", num: 1)
+    var matrixData: [MatrixEntry] = [
+        .init(positive: "+", negative: "+", num: Double.random(in: 1 ... 200)),
+        .init(positive: "+", negative: "-", num: Double.random(in: 1 ... 200)),
+        .init(positive: "-", negative: "-", num: Double.random(in: 1 ... 200)),
+        .init(positive: "-", negative: "+", num: Double.random(in: 1 ... 200))
     ]
 }

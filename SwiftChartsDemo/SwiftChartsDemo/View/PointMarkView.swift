@@ -12,7 +12,7 @@ struct PointMarkView: View {
     
     @State private var symbol: BasicChartSymbolShape = .square
     
-    @State private var vm = StockPriceViewModel()
+    @State private var vm = StockEntityViewModel()
     
     var body: some View {
         VStack {

@@ -1,13 +1,13 @@
 //
-//  TSMCStockPrice.swift
+//  StockEntity.swift
 //  SwiftChartsDemo
 //
 //  Created by Leo Ho on 2022/9/10.
 //
 
-import Foundation
+import SwiftUI
 
-struct StockPrice: Identifiable {
+struct StockEntity: Identifiable {
     
     var id = UUID().uuidString
     

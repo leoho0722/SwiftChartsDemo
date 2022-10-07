@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0791CD728F086B300008750 /* RectangleMark+PointMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0791CD628F086B300008750 /* RectangleMark+PointMarkView.swift */; };
+		D0791CD928F086D800008750 /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0791CD828F086D800008750 /* Coord.swift */; };
+		D0791CDB28F0870900008750 /* CoordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0791CDA28F0870900008750 /* CoordViewModel.swift */; };
 		D0E65B9028EF24F00009B217 /* MenuSymbolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65B8F28EF24F00009B217 /* MenuSymbolButton.swift */; };
 		D0EC35CF28CB7ED80080FEC3 /* SwiftChartsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35CE28CB7ED80080FEC3 /* SwiftChartsDemoApp.swift */; };
 		D0EC35D128CB7ED80080FEC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35D028CB7ED80080FEC3 /* ContentView.swift */; };
@@ -20,11 +23,14 @@
 		D0EC35EA28CB8FC40080FEC3 /* PointMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35E928CB8FC40080FEC3 /* PointMarkView.swift */; };
 		D0EC35EC28CB90B50080FEC3 /* RectangleMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35EB28CB90B50080FEC3 /* RectangleMarkView.swift */; };
 		D0EC35EE28CB910A0080FEC3 /* RuleMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35ED28CB910A0080FEC3 /* RuleMarkView.swift */; };
-		D0EC35F428CC554E0080FEC3 /* StockPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35F328CC554E0080FEC3 /* StockPrice.swift */; };
-		D0EC35F628CC57700080FEC3 /* StockPriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35F528CC57700080FEC3 /* StockPriceViewModel.swift */; };
+		D0EC35F428CC554E0080FEC3 /* StockEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35F328CC554E0080FEC3 /* StockEntity.swift */; };
+		D0EC35F628CC57700080FEC3 /* StockEntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35F528CC57700080FEC3 /* StockEntityViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0791CD628F086B300008750 /* RectangleMark+PointMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RectangleMark+PointMarkView.swift"; sourceTree = "<group>"; };
+		D0791CD828F086D800008750 /* Coord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
+		D0791CDA28F0870900008750 /* CoordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordViewModel.swift; sourceTree = "<group>"; };
 		D0E65B8F28EF24F00009B217 /* MenuSymbolButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSymbolButton.swift; sourceTree = "<group>"; };
 		D0EC35CB28CB7ED80080FEC3 /* SwiftChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EC35CE28CB7ED80080FEC3 /* SwiftChartsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChartsDemoApp.swift; sourceTree = "<group>"; };
@@ -39,8 +45,8 @@
 		D0EC35E928CB8FC40080FEC3 /* PointMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointMarkView.swift; sourceTree = "<group>"; };
 		D0EC35EB28CB90B50080FEC3 /* RectangleMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleMarkView.swift; sourceTree = "<group>"; };
 		D0EC35ED28CB910A0080FEC3 /* RuleMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleMarkView.swift; sourceTree = "<group>"; };
-		D0EC35F328CC554E0080FEC3 /* StockPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPrice.swift; sourceTree = "<group>"; };
-		D0EC35F528CC57700080FEC3 /* StockPriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPriceViewModel.swift; sourceTree = "<group>"; };
+		D0EC35F328CC554E0080FEC3 /* StockEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockEntity.swift; sourceTree = "<group>"; };
+		D0EC35F528CC57700080FEC3 /* StockEntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockEntityViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				D0EC35DF28CB88640080FEC3 /* MatrixEntry.swift */,
-				D0EC35F328CC554E0080FEC3 /* StockPrice.swift */,
+				D0EC35F328CC554E0080FEC3 /* StockEntity.swift */,
+				D0791CD828F086D800008750 /* Coord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,7 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				D0EC35E128CB88BE0080FEC3 /* MatrixEntryViewModel.swift */,
-				D0EC35F528CC57700080FEC3 /* StockPriceViewModel.swift */,
+				D0EC35F528CC57700080FEC3 /* StockEntityViewModel.swift */,
+				D0791CDA28F0870900008750 /* CoordViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 				D0EC35E728CB8F710080FEC3 /* LineMarkView.swift */,
 				D0EC35E928CB8FC40080FEC3 /* PointMarkView.swift */,
 				D0EC35EB28CB90B50080FEC3 /* RectangleMarkView.swift */,
+				D0791CD628F086B300008750 /* RectangleMark+PointMarkView.swift */,
 				D0EC35ED28CB910A0080FEC3 /* RuleMarkView.swift */,
 				D0EC35E328CB892F0080FEC3 /* BarMarkView.swift */,
 				D0E65B8F28EF24F00009B217 /* MenuSymbolButton.swift */,
@@ -194,17 +203,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0EC35F428CC554E0080FEC3 /* StockPrice.swift in Sources */,
+				D0EC35F428CC554E0080FEC3 /* StockEntity.swift in Sources */,
 				D0EC35D128CB7ED80080FEC3 /* ContentView.swift in Sources */,
+				D0791CDB28F0870900008750 /* CoordViewModel.swift in Sources */,
 				D0EC35CF28CB7ED80080FEC3 /* SwiftChartsDemoApp.swift in Sources */,
 				D0EC35E428CB892F0080FEC3 /* BarMarkView.swift in Sources */,
-				D0EC35F628CC57700080FEC3 /* StockPriceViewModel.swift in Sources */,
+				D0EC35F628CC57700080FEC3 /* StockEntityViewModel.swift in Sources */,
 				D0EC35E828CB8F710080FEC3 /* LineMarkView.swift in Sources */,
+				D0791CD928F086D800008750 /* Coord.swift in Sources */,
 				D0EC35E028CB88640080FEC3 /* MatrixEntry.swift in Sources */,
 				D0EC35E628CB8F000080FEC3 /* AreaMarkView.swift in Sources */,
 				D0EC35EA28CB8FC40080FEC3 /* PointMarkView.swift in Sources */,
 				D0E65B9028EF24F00009B217 /* MenuSymbolButton.swift in Sources */,
 				D0EC35EE28CB910A0080FEC3 /* RuleMarkView.swift in Sources */,
+				D0791CD728F086B300008750 /* RectangleMark+PointMarkView.swift in Sources */,
 				D0EC35EC28CB90B50080FEC3 /* RectangleMarkView.swift in Sources */,
 				D0EC35E228CB88BE0080FEC3 /* MatrixEntryViewModel.swift in Sources */,
 			);

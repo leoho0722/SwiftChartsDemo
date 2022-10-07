@@ -12,17 +12,17 @@ struct LineMarkView: View {
     
     @State private var symbol: BasicChartSymbolShape = .square
     
-    @State private var vm = StockPriceViewModel()
+    @State private var vm = StockEntityViewModel()
     
     var body: some View {
         VStack {
             Chart {
-                ForEach(vm.stockData) { data in
+                ForEach(vm.stockData) { stock in
                     LineMark(
-                        x: .value("Date", data.date),
-                        y: .value("End Price", data.endPrice)
+                        x: .value("Date", stock.date),
+                        y: .value("End Price", stock.endPrice)
                     )
-                    .foregroundStyle(by: .value("Stock Name", data.name))
+                    .foregroundStyle(by: .value("Stock Name", stock.name))
                     .symbol(symbol)
                     .symbolSize(100)
                 }
