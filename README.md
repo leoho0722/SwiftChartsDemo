@@ -8,3 +8,4 @@
 
 - 開發環境：Xcode 14.0.1
 - App 最低安裝限制：iOS 16.0
+- Only Support **SwiftUI**
