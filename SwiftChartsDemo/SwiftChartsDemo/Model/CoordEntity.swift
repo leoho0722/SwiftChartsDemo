@@ -1,5 +1,5 @@
 //
-//  Coord.swift
+//  CoordEntity.swift
 //  SwiftChartsDemo
 //
 //  Created by Leo Ho on 2022/10/8.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Coord: Identifiable {
+struct CoordEntity: Identifiable {
     
     var id = UUID().uuidString
     

@@ -8,8 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D0791CD728F086B300008750 /* RectangleMark+PointMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0791CD628F086B300008750 /* RectangleMark+PointMarkView.swift */; };
-		D0791CD928F086D800008750 /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0791CD828F086D800008750 /* Coord.swift */; };
-		D0791CDB28F0870900008750 /* CoordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0791CDA28F0870900008750 /* CoordViewModel.swift */; };
+		D0791CD928F086D800008750 /* CoordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0791CD828F086D800008750 /* CoordEntity.swift */; };
+		D0791CDB28F0870900008750 /* CoordEntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0791CDA28F0870900008750 /* CoordEntityViewModel.swift */; };
+		D083D16928F1297900673554 /* EventEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083D16828F1297900673554 /* EventEntity.swift */; };
+		D083D16B28F12B4500673554 /* EventEntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083D16A28F12B4500673554 /* EventEntityViewModel.swift */; };
+		D083D16D28F1353800673554 /* RuleMark+BarMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083D16C28F1353800673554 /* RuleMark+BarMarkView.swift */; };
+		D083D16F28F1357600673554 /* DepartmentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083D16E28F1357600673554 /* DepartmentEntity.swift */; };
+		D083D17128F135C000673554 /* DepartmentEntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083D17028F135C000673554 /* DepartmentEntityViewModel.swift */; };
+		D083D17328F1454600673554 /* OneDBarMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083D17228F1454600673554 /* OneDBarMarkView.swift */; };
+		D083D17528F1458800673554 /* FileCategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083D17428F1458800673554 /* FileCategoryEntity.swift */; };
+		D083D17728F148A300673554 /* FileCategoryEntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083D17628F148A300673554 /* FileCategoryEntityViewModel.swift */; };
+		D083D17928F1539500673554 /* DepartmentCategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083D17828F1539500673554 /* DepartmentCategoryEntity.swift */; };
+		D083D17B28F153F100673554 /* DepartmentCategoryEntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083D17A28F153F100673554 /* DepartmentCategoryEntityViewModel.swift */; };
 		D0E65B9028EF24F00009B217 /* MenuSymbolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65B8F28EF24F00009B217 /* MenuSymbolButton.swift */; };
 		D0EC35CF28CB7ED80080FEC3 /* SwiftChartsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35CE28CB7ED80080FEC3 /* SwiftChartsDemoApp.swift */; };
 		D0EC35D128CB7ED80080FEC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC35D028CB7ED80080FEC3 /* ContentView.swift */; };
@@ -29,8 +39,18 @@
 
 /* Begin PBXFileReference section */
 		D0791CD628F086B300008750 /* RectangleMark+PointMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RectangleMark+PointMarkView.swift"; sourceTree = "<group>"; };
-		D0791CD828F086D800008750 /* Coord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
-		D0791CDA28F0870900008750 /* CoordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordViewModel.swift; sourceTree = "<group>"; };
+		D0791CD828F086D800008750 /* CoordEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordEntity.swift; sourceTree = "<group>"; };
+		D0791CDA28F0870900008750 /* CoordEntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordEntityViewModel.swift; sourceTree = "<group>"; };
+		D083D16828F1297900673554 /* EventEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEntity.swift; sourceTree = "<group>"; };
+		D083D16A28F12B4500673554 /* EventEntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEntityViewModel.swift; sourceTree = "<group>"; };
+		D083D16C28F1353800673554 /* RuleMark+BarMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuleMark+BarMarkView.swift"; sourceTree = "<group>"; };
+		D083D16E28F1357600673554 /* DepartmentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentEntity.swift; sourceTree = "<group>"; };
+		D083D17028F135C000673554 /* DepartmentEntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentEntityViewModel.swift; sourceTree = "<group>"; };
+		D083D17228F1454600673554 /* OneDBarMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDBarMarkView.swift; sourceTree = "<group>"; };
+		D083D17428F1458800673554 /* FileCategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCategoryEntity.swift; sourceTree = "<group>"; };
+		D083D17628F148A300673554 /* FileCategoryEntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCategoryEntityViewModel.swift; sourceTree = "<group>"; };
+		D083D17828F1539500673554 /* DepartmentCategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentCategoryEntity.swift; sourceTree = "<group>"; };
+		D083D17A28F153F100673554 /* DepartmentCategoryEntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentCategoryEntityViewModel.swift; sourceTree = "<group>"; };
 		D0E65B8F28EF24F00009B217 /* MenuSymbolButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSymbolButton.swift; sourceTree = "<group>"; };
 		D0EC35CB28CB7ED80080FEC3 /* SwiftChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EC35CE28CB7ED80080FEC3 /* SwiftChartsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChartsDemoApp.swift; sourceTree = "<group>"; };
@@ -102,7 +122,11 @@
 			children = (
 				D0EC35DF28CB88640080FEC3 /* MatrixEntry.swift */,
 				D0EC35F328CC554E0080FEC3 /* StockEntity.swift */,
-				D0791CD828F086D800008750 /* Coord.swift */,
+				D0791CD828F086D800008750 /* CoordEntity.swift */,
+				D083D16828F1297900673554 /* EventEntity.swift */,
+				D083D16E28F1357600673554 /* DepartmentEntity.swift */,
+				D083D17828F1539500673554 /* DepartmentCategoryEntity.swift */,
+				D083D17428F1458800673554 /* FileCategoryEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,7 +136,11 @@
 			children = (
 				D0EC35E128CB88BE0080FEC3 /* MatrixEntryViewModel.swift */,
 				D0EC35F528CC57700080FEC3 /* StockEntityViewModel.swift */,
-				D0791CDA28F0870900008750 /* CoordViewModel.swift */,
+				D0791CDA28F0870900008750 /* CoordEntityViewModel.swift */,
+				D083D16A28F12B4500673554 /* EventEntityViewModel.swift */,
+				D083D17028F135C000673554 /* DepartmentEntityViewModel.swift */,
+				D083D17A28F153F100673554 /* DepartmentCategoryEntityViewModel.swift */,
+				D083D17628F148A300673554 /* FileCategoryEntityViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,7 +155,9 @@
 				D0EC35EB28CB90B50080FEC3 /* RectangleMarkView.swift */,
 				D0791CD628F086B300008750 /* RectangleMark+PointMarkView.swift */,
 				D0EC35ED28CB910A0080FEC3 /* RuleMarkView.swift */,
+				D083D16C28F1353800673554 /* RuleMark+BarMarkView.swift */,
 				D0EC35E328CB892F0080FEC3 /* BarMarkView.swift */,
+				D083D17228F1454600673554 /* OneDBarMarkView.swift */,
 				D0E65B8F28EF24F00009B217 /* MenuSymbolButton.swift */,
 			);
 			path = View;
@@ -203,17 +233,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D083D17328F1454600673554 /* OneDBarMarkView.swift in Sources */,
+				D083D17728F148A300673554 /* FileCategoryEntityViewModel.swift in Sources */,
+				D083D16B28F12B4500673554 /* EventEntityViewModel.swift in Sources */,
+				D083D17B28F153F100673554 /* DepartmentCategoryEntityViewModel.swift in Sources */,
 				D0EC35F428CC554E0080FEC3 /* StockEntity.swift in Sources */,
+				D083D17528F1458800673554 /* FileCategoryEntity.swift in Sources */,
+				D083D16F28F1357600673554 /* DepartmentEntity.swift in Sources */,
 				D0EC35D128CB7ED80080FEC3 /* ContentView.swift in Sources */,
-				D0791CDB28F0870900008750 /* CoordViewModel.swift in Sources */,
+				D0791CDB28F0870900008750 /* CoordEntityViewModel.swift in Sources */,
 				D0EC35CF28CB7ED80080FEC3 /* SwiftChartsDemoApp.swift in Sources */,
 				D0EC35E428CB892F0080FEC3 /* BarMarkView.swift in Sources */,
 				D0EC35F628CC57700080FEC3 /* StockEntityViewModel.swift in Sources */,
+				D083D16D28F1353800673554 /* RuleMark+BarMarkView.swift in Sources */,
 				D0EC35E828CB8F710080FEC3 /* LineMarkView.swift in Sources */,
-				D0791CD928F086D800008750 /* Coord.swift in Sources */,
+				D083D17128F135C000673554 /* DepartmentEntityViewModel.swift in Sources */,
+				D0791CD928F086D800008750 /* CoordEntity.swift in Sources */,
 				D0EC35E028CB88640080FEC3 /* MatrixEntry.swift in Sources */,
 				D0EC35E628CB8F000080FEC3 /* AreaMarkView.swift in Sources */,
 				D0EC35EA28CB8FC40080FEC3 /* PointMarkView.swift in Sources */,
+				D083D17928F1539500673554 /* DepartmentCategoryEntity.swift in Sources */,
+				D083D16928F1297900673554 /* EventEntity.swift in Sources */,
 				D0E65B9028EF24F00009B217 /* MenuSymbolButton.swift in Sources */,
 				D0EC35EE28CB910A0080FEC3 /* RuleMarkView.swift in Sources */,
 				D0791CD728F086B300008750 /* RectangleMark+PointMarkView.swift in Sources */,

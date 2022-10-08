@@ -8,30 +8,48 @@
 import SwiftUI
 import Charts
 
-//struct BarMarkView: View {
-//    
-//    @State private var vm = ToyShapeViewModel()
-//    
-//    var body: some View {
-//        Chart {
-//            ForEach(vm.data) { shape in
-//                BarMark(
-//                    x: .value("Shape Type", shape.type),
-//                    y: .value("Type Count", shape.count)
-//                )
-//                .foregroundStyle(by: .value("Shape Color", shape.color))
-//            }
-//        }
-//        .chartForegroundStyleScale([
-//            "Green" : .green, "Purple" : .purple, "Pink" : .pink, "Yellow" : .yellow
-//        ])
-//        .frame(height: 300)
-//        .padding()
-//    }
-//}
-//
-//struct BarChartView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BarMarkView()
-//    }
-//}
+struct BarMarkView: View {
+    
+    @State private var deVM = DepartmentEntityViewModel()
+    
+    @State private var dceVM = DepartmentCategoryEntityViewModel()
+    
+    var body: some View {
+        VStack {
+            Chart {
+                ForEach(deVM.departmentData) { department in
+                    BarMark(
+                        x: .value("Department", department.department),
+                        y: .value("Profit", department.profit)
+                    )
+                    .annotation {
+                        Text("\(department.profit)")
+                    }
+                }
+            }
+            .chartYAxisLabel("Normal", alignment: .center)
+            .frame(height: 300)
+            .padding()
+            
+            Chart {
+                ForEach(dceVM.departmentData) { department in
+                    BarMark(
+                        x: .value("Category", department.department),
+                        y: .value("Profit", department.profit),
+                        stacking: .standard
+                    )
+                    .foregroundStyle(by: .value("Product Category", department.category))
+                }
+            }
+            .chartYAxisLabel("Stacking.standard", alignment: .center)
+            .frame(height: 300)
+            .padding()
+        }
+    }
+}
+
+struct BarChartView_Previews: PreviewProvider {
+    static var previews: some View {
+        BarMarkView()
+    }
+}

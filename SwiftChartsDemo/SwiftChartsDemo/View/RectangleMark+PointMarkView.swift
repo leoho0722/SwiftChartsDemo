@@ -10,7 +10,7 @@ import Charts
 
 struct RectangleMark_PointMarkView: View {
     
-    @State private var vm = CoordViewModel()
+    @State private var vm = CoordEntityViewModel()
     
     var body: some View {
         Chart {
